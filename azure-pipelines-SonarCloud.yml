@@ -33,10 +33,10 @@ stages:
         - task: SonarCloudPrepare@1
           inputs:
             SonarCloud: 'SonarCloud'
-            organization: 'malevarro-devsecops'
+            organization: 'fernanda980407'
             scannerMode: 'CLI'
             configMode: 'manual'
-            cliProjectKey: 'malevarro_reactjs-shopping-cart2'
+            cliProjectKey: 'fernanda980407_reactjs-shopping-cart'
             cliProjectName: 'reactjs-shopping-cart'
             cliSources: '.'
         - task: SonarCloudAnalyze@1
