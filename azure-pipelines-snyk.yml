@@ -35,7 +35,7 @@ stages:
             command: 'login'
         - task: SnykSecurityScan@1
           inputs:
-            serviceConnectionEndpoint: 'Snyk service connection'
+            serviceConnectionEndpoint: 'SNYK2'
             testType: 'container'
             dockerImageName: '$(containerRegistryn)/$(imageRepository)'
             dockerfilePath: '$(dockerfilePath)'
