@@ -9,9 +9,9 @@ resources:
 - repo: self
 
 variables:
-  dockerRegistryServiceConnection: '5db8edef-185a-4e82-b89c-3f0d6dd38c1f'
+  dockerRegistryServiceConnection: '26a65500-b05f-4a4c-a7dd-73a9e7a59dcb'
   imageRepository: 'malevarrokart'
-  containerRegistryn: 'myacr20079.azurecr.io'
+  containerRegistryn: 'myacr21942.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
   tag: '$(Build.BuildId)'
   vmImageName: 'ubuntu-latest'
@@ -31,7 +31,7 @@ stages:
         steps:
         - task: Docker@2
           inputs:
-            containerRegistry: 'myacr20079'
+            containerRegistry: 'myacr21942'
             command: 'login'
         - task: SnykSecurityScan@1
           inputs:
